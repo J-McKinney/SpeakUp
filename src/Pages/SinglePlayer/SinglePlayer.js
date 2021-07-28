@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import Button from "react-bootstrap/Button";
+import Container from "react-bootstrap/Container";
 import Styles from "./SinglePlayer.module.css";
 
 class SinglePlayer extends Component {
@@ -17,7 +19,11 @@ class SinglePlayer extends Component {
   render() {
     return (
       <>
-        <div className={Styles.wrapper}></div>
+        <div className={Styles.wrapper}>
+          <Container className={Styles.container}>
+            <Button className={Styles.button}>Click Here</Button>
+          </Container>
+        </div>
       </>
     );
   }

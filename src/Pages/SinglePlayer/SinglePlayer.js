@@ -2,18 +2,20 @@ import React, { Component } from "react";
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import Styles from "./SinglePlayer.module.css";
+require("dotenv").config();
 
 class SinglePlayer extends Component {
   state = {};
 
   componentDidMount() {
-    console.log("Mount: ");
+    console.log("Mount:");
+    // console.log(process.env.REACT_APP_MY_KEY);
   }
   componentWillUnmount() {
-    console.log("Unmount: ");
+    console.log("Unmount:");
   }
   componentDidUpdate() {
-    console.log("Update: ");
+    console.log("Update:");
   }
 
   render() {

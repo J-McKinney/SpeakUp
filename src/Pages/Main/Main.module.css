@@ -10,4 +10,19 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
+  margin-bottom: 50vh;
+}
+
+.a1,
+.b2,
+.c3,
+.d4 {
+  min-height: 100vh;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.h1 {
+  padding-top: 400px;
 }

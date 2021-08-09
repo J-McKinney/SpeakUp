@@ -24,10 +24,10 @@ class SinglePlayer extends Component {
   };
 
   componentDidMount() {
-    // console.log("Mount:");
+    console.log("Mount:");
   }
   componentWillUnmount() {
-    // console.log("Unmount:");
+    console.log("Unmount:");
   }
   componentDidUpdate() {
     console.log("Update:");
@@ -68,14 +68,17 @@ class SinglePlayer extends Component {
         this.setState({ sentence: transcriptArr[0] });
       };
       this.setState({ listening: true });
-    } else if (this.state.listening === true) {
+    }
+    // else {
+    else if (this.state.listening === true) {
       audioContext.close();
+      // audioContext.suspend();
       recognition.stop();
       recognition.onend = () => {};
     }
-    // console.log(interimTranscript);
-    // console.log(finalTranscript);
-    // console.log(this.state.sentence);
+    console.log(interimTranscript);
+    console.log(finalTranscript);
+    console.log(this.state.sentence);
   };
 
   render() {

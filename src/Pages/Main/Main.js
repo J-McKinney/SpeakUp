@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
-import Styles from "./SinglePlayer.module.css";
+import Styles from "./Main.module.css";
 require("dotenv").config();
 
 // Creating a new instance of AudioContext to allow the program to access the microphone
@@ -24,10 +24,10 @@ class SinglePlayer extends Component {
   };
 
   componentDidMount() {
-    console.log("Mount:");
+    // console.log("Mount:");
   }
   componentWillUnmount() {
-    console.log("Unmount:");
+    // console.log("Unmount:");
   }
   componentDidUpdate() {
     console.log("Update:");
@@ -73,9 +73,9 @@ class SinglePlayer extends Component {
       recognition.stop();
       recognition.onend = () => {};
     }
-    console.log(interimTranscript);
-    console.log(finalTranscript);
-    console.log(this.state.sentence);
+    // console.log(interimTranscript);
+    // console.log(finalTranscript);
+    // console.log(this.state.sentence);
   };
 
   render() {

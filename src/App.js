@@ -1,4 +1,4 @@
-import SinglePlayer from "./Pages/SinglePlayer/SinglePlayer";
+import Main from "./Pages/Main/Main";
 import logo from "./logo.svg";
 import "./App.css";
 
@@ -8,7 +8,7 @@ function App() {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <SinglePlayer />
+          <Main />
         </header>
       </div>
     </>
